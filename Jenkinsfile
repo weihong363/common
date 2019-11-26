@@ -12,7 +12,7 @@ pipeline {
     stage('run') {
       steps {
         sh 'cd target'
-        sh 'java -jar common-1.0-SNAPSHOT.jar'
+        sh './startup.sh'
       }
     }
 
