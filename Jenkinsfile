@@ -13,7 +13,7 @@ pipeline {
       steps {
         sh 'cd /common'
         sh 'cd target'
-        sh 'sh startup.sh'
+        sh 'whoami'
       }
     }
 
