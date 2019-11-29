@@ -11,7 +11,9 @@ pipeline {
 
     stage('run') {
       steps {
-        sh 'sh /common/target/startup.sh'
+        sh 'cd /common'
+        sh 'cd /target'
+        sh 'sh startup.sh'
       }
     }
 
