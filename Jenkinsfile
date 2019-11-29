@@ -13,7 +13,7 @@ pipeline {
       steps {
         sh 'cd /common'
         sh 'cd target'
-        sh 'sh startup.sh'
+        sh 'java -jar common-1.0-SNAPSHOT.jar'
       }
     }
 
