@@ -3,7 +3,8 @@
 
 #### 2020.04.11
 1. 新增：
->   mybatis-plus配置，及代码；
+>   1. mybatis-plus配置，及代码；
+>   2. Junit+Mockito单元测试
 2. 注意点：
 >   1. mybatis-plus自增的id会非常大，所以需要在实体类里加上注解 @TableId(value = "id",type = IdType.AUTO)
 。这里type = IdType.AUTO属性加上后，将不会使用mybatis-plus的自增而是使用数据库给的自增值，就不会出现ID过大的
