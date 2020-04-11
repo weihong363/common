@@ -50,6 +50,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <version>1.18.12</version>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -68,10 +69,48 @@
       <artifactId>spring-security-test</artifactId>
       <scope>test</scope>
     </dependency>
+<!--  必须注释掉，不然回和动态数据源里的hikari起冲突  -->
+<!--    <dependency>-->
+<!--      <groupId>com.alibaba</groupId>-->
+<!--      <artifactId>druid</artifactId>-->
+<!--      <version>1.0.25.2018101301</version>-->
+<!--    </dependency>-->
+    <!-- 支持 @ConfigurationProperties 注解（用来在yml里自定义配置的） -->
     <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid</artifactId>
-      <version>1.0.25.2018101301</version>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <!-- swagger2 -->
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger2</artifactId>
+      <version>2.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <version>2.6.1</version>
+    </dependency>
+    <!-- log -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-logging</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>3.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+      <version>2.4.2</version>
     </dependency>
   </dependencies>
 
