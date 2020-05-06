@@ -1,4 +1,4 @@
-package com.ironion.demo.enums;
+package com.ironion.demo.entity;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,5 +1,9 @@
 ### 一个简单的springboot脚手架
 
+#### 2020.05.06
+1. 新增
+>   1. 空对象模式学习记录（学习的范例参考自： [https://www.jianshu.com/p/107a87b60d9f](https://www.jianshu.com/p/107a87b60d9f) ）
+
 #### 2020.05.05
 1. 新增
 >   1. RabbitMQ的整合

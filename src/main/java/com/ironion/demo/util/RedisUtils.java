@@ -1,6 +1,6 @@
 package com.ironion.demo.util;
 
-import com.ironion.demo.enums.Status;
+import com.ironion.demo.entity.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundListOperations;
 import org.springframework.data.redis.core.RedisTemplate;

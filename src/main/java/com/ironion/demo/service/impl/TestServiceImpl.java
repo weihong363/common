@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ironion.demo.entity.Test;
 import com.ironion.demo.dao.TestDao;
-import com.ironion.demo.service.TestService;
+import com.ironion.demo.service.ITestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service("testService")
-public class TestServiceImpl extends ServiceImpl<TestDao,Test> implements TestService {
+public class TestServiceImpl extends ServiceImpl<TestDao,Test> implements ITestService {
 
     /**
      * 通过ID查询单条数据

@@ -9,7 +9,7 @@ import com.ironion.demo.entity.Test;
  * @author huangwc
  * @since 2020-04-11 11:36:27
  */
-public interface TestService extends IService<Test> {
+public interface ITestService extends IService<Test> {
 
     /**
      * 通过ID查询单条数据

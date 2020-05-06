@@ -1,14 +1,12 @@
 package com.ironion.demo.controller;
 
 import com.ironion.demo.entity.Test;
-import com.ironion.demo.service.TestService;
-import com.ironion.demo.vo.ResultValue;
+import com.ironion.demo.service.ITestService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.Optional;
 
 /**
  * 测试(Test)表控制层
@@ -23,7 +21,7 @@ public class TestController {
      * 服务对象
      */
     @Resource
-    private TestService testService;
+    private ITestService testService;
 
     /**
      * 通过主键查询单条数据
