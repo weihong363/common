@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    hikari:
+      minimum-idle: 4
+      maximum-pool-size: 16
+      connection-timeout: 10000
+      idle-timeout: 30000
+      connection-init-sql: set names utf8mb4
+    dynamic:
+      #主数据源
+      primary: default
+      datasource:
+        #数据源default
+        default:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+          username: root
+          password: root
+        #从数据源dw
+
+    #        dw:
+    #          driver-class-name: com.mysql.cj.jdbc.Driver
+    #          url: jdbc:mysql://localhost:3306/dw?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    #          username: root
+    #          password:
+
+    #rabbitMQ配置
+    rabbitmq:
+      addresses: 127.0.0.1
+      #默认5762，可以不加
+      port: 5762
+      #默认guest
+      username: guest
+      password: guest
+
+    #redis配置
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+      password:
+      jedis:
+        pool:
+          max-active: 200
+          max-wait: -1ms
+          max-idle: 10
+          min-idle: 0
+      timeout: 1000
